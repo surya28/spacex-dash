@@ -1,0 +1,95 @@
+body {
+  text-align: center;
+  font-size: 62.5%;
+}
+
+.header {
+  width: 15rem;
+  pointer-events: none;
+}
+
+.modal {
+  text-align: left;
+}
+
+.flex-container {
+  display: flex;
+  border-bottom: 1px solid rgb(216, 216, 252);
+  text-align: left;
+}
+
+.flex-container-logo {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  align-items: center;
+  padding: 0;
+}
+
+.flex-container-details {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.flex-item {
+  width: 70%;
+  margin-left: 10px;
+}
+
+.title {
+  width: 30% !important;
+}
+
+.item1 {
+  grid-area: header;
+}
+
+.item2 {
+  grid-area: menu;
+}
+
+.item3 {
+  grid-area: main;
+}
+
+.item4 {
+  grid-area: right;
+}
+
+.item5 {
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 0px;
+  padding: 0px;
+}
+
+.grid-container>div {
+  text-align: left;
+  padding: 20px 0;
+}
+
+.img{
+  width: 8rem;
+}
+
+.icon-img{
+  width: 20px;
+}
+
+.max-width{
+  width: fit-content !important;
+}
+
+.margin-none{
+  margin-left: 0 !important;
+}
